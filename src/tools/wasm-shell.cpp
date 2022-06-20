@@ -284,7 +284,7 @@ protected:
         }
       });
       if (wasm.memories[0]->imported()) {
-        reportUnknownImport(&wasm.memories[0]);
+        reportUnknownImport(&*wasm.memories[0]);
       }
     }
 
